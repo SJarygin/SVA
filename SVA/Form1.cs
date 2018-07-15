@@ -388,7 +388,7 @@ namespace SVA
                 if (AVlc == vlc1)
                     return true;
                 AVlc.Width = (p9Width - 4 * margin) / 3;
-                AVlc.Height = (vlc1.Height - 4 * margin) / 3;
+                AVlc.Height = (vlc1.Height - 2 * margin) / 3;
 
                 var n = Convert.ToInt32(AVlc.Name.Replace("vlc", "")) - 1;
                 AVlc.Left = margin + posX[n] * (AVlc.Width + margin);

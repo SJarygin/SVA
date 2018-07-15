@@ -30,6 +30,7 @@ namespace SVA
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.vlc1 = new Vlc.DotNet.Forms.VlcControl();
             this.vlc2 = new Vlc.DotNet.Forms.VlcControl();
             this.vlc3 = new Vlc.DotNet.Forms.VlcControl();
@@ -397,6 +398,7 @@ namespace SVA
             this.Controls.Add(this.vlc3);
             this.Controls.Add(this.vlc2);
             this.Controls.Add(this.vlc1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
